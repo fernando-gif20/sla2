@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Projeto Flask</title>
+
+    <!-- Conectar CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Projeto Flask</h1>
+
+        <nav>
+            <a href="/">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+            <h2>Bem-vindo ao meu site!</h2>
+            <p>Este site foi desenvolvido utilizando Python e Flask.</p>
+
+            <button onclick="mostrarMensagem()">
+                Clique aqui
+            </button>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre o projeto</h2>
+            <p>Este é meu primeiro projeto utilizando Flask.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Meu Projeto Flask</p>
+    </footer>
+
+    <!-- Conectar JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
